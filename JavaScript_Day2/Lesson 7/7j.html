@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caltulator</title>
+</head>
+
+<body>
+    <p>
+
+        <button onclick="uppdatecalaculation('0')">0</button>
+        <button onclick="uppdatecalaculation('1')">1</button>
+        <button onclick="uppdatecalaculation('2')">2</button>
+        <button onclick="uppdatecalaculation('+')">+</button>
+        
+    </p>
+    <p>
+        <button onclick="uppdatecalaculation('3')">3</button>
+        <button onclick="uppdatecalaculation('4')">4</button>
+        <button onclick="uppdatecalaculation('5')">5</button>
+        <button onclick="uppdatecalaculation('-')">-</button>
+    </p>
+    <p>
+        <button onclick="uppdatecalaculation('6')">6</button>
+        <button onclick="uppdatecalaculation('7')">7</button>
+        <button onclick="uppdatecalaculation('8')">8</button>
+        <button onclick="uppdatecalaculation('*')">*</button>
+        
+    </p>
+    <p>
+        <button onclick="uppdatecalaculation('9')">9</button>
+        <button onclick="uppdatecalaculation('10')">/</button>
+        <button onclick="calculation = eval(calculation), console.log(calculation)">=</button>
+        
+        
+    </p>
+    <script>
+        let calculation = " "
+        function uppdatecalaculation(value){
+            calculation +=value
+            console.log(calculation)
+        }
+    </script>
+</body>
+
+</html>
