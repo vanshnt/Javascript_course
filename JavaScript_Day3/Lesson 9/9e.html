@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9e problem</title>
+  </head>
+  <body>
+    <input placeholder="Name" class="name"
+      onkeydown="
+        if (event.key === 'Enter') {
+          
+          const inputElement = document.querySelector('.name');
+          document.querySelector('.message')
+            .innerHTML = `Your name is: ${inputElement.value}`;
+        }
+      ">
+
+    <button onclick="
+      const inputElement = document.querySelector('.name');
+      document.querySelector('.message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+    ">Submit</button>
+
+    <p class="message"></p>
+  </body>
+</html>
